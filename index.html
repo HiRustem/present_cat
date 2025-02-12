@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Present Cat</title>
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="stylesheet" href="/assets/styles/box.css" />
+    <title>Котик</title>
+    <script src="/assets/scripts/box.js" defer></script>
   </head>
-  <body></body>
+  <body class="page">
+    <div class="scene">
+      <div id="box_wrapper" class="box_wrapper">
+        <div class="cap_scene">
+          <div class="cap">
+            <div class="cap_content cap_front"></div>
+            <div class="cap_content cap_back"></div>
+            <div class="cap_content cap_left"></div>
+            <div class="cap_content cap_right"></div>
+            <div class="cap_content cap_top"></div>
+          </div>
+        </div>
+
+        <div class="box_scene">
+          <div class="box">
+            <div class="box_content front"></div>
+            <div class="box_content back"></div>
+            <div class="box_content left"></div>
+            <div class="box_content right"></div>
+            <div class="box_content bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="boxMeowSound" src="/assets/audio/box_meow.mp3"></audio>
+  </body>
 </html>
